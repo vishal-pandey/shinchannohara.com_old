@@ -1,0 +1,6 @@
+# DO NOT REMOVE THIS LINE AND THE LINES ABOVE gF6Z5b:REDIRECTID
+
+#Alternate default index page
+DirectoryIndex shin.html
+# Do not remove this line, otherwise mod_rewrite rules will stop working
+RewriteBase /

@@ -1,0 +1,33 @@
+#include<stdio.h>
+
+void reverse( char arr[])
+{
+	int c,i;
+	char rev[100];
+	int x=0;
+	i=sizeof(arr);
+	
+	while(i>0)
+	{
+		rev[x]=arr[i-1];
+		x++;
+		i--;
+	}
+	
+	printf("%s",rev);
+}	
+
+void main()
+{
+		
+	char arr[100];
+	int c,i;
+
+	for( i=0; (c = getchar()) != EOF; i++)
+	{
+		arr[i] = c;
+	}
+	
+	reverse(arr);	
+
+}

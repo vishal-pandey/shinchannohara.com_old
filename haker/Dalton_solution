@@ -1,0 +1,29 @@
+#include&lt;stdio.h&gt;
+
+int main ()
+{
+	long int T,i;
+
+	scanf(&quot;%ld&quot;,&amp;T);
+	
+	long int n[T];	
+	
+	for(i=0; i&lt;T; i++)
+	{
+		scanf(&quot;%ld&quot;,&amp;n[i]);
+	}
+	
+	for(i=0; i&lt;T; i++)
+	{
+		if(n[i]%2 == 0)
+		{
+			printf(&quot;%ld %ld&quot;,(n[i]/2),(n[i]/2));
+		}
+		else
+		{
+			printf(&quot;%ld %ld&quot;,(n[i]/2),(n[i]/2)+1);
+		}
+		printf(&quot;\n&quot;);
+	}
+	return 0;
+}	

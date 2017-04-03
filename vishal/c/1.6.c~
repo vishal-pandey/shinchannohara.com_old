@@ -1,0 +1,10 @@
+#include<stdio.h>
+
+void main()
+{
+	int output;
+	
+	while(output = (getchar()!= EOF))
+
+	printf("%d",output);	printf("%d",output);
+}

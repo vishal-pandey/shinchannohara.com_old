@@ -1,0 +1,69 @@
+			<div id='sample_comment' class='sample_comment'>
+				<div id='sample_name' class='sample_name'>
+					REKHA
+				</div>
+
+				<div id='test_comment' class='test_comment'>
+					I like this site very much. Because you are my loveliest brother.
+				</div>
+
+			</div>
+			<br>
+			<div id='sample_comment' class='sample_comment'>
+				<div id='sample_name' class='sample_name'>
+					shweta 
+				</div>
+
+				<div id='test_comment' class='test_comment'>
+					This is very helpful website....love it  &#128522; &#128522;
+				</div>
+
+			</div>
+			<br>
+
+<div id='sample_comment' class='sample_comment'>
+				<div id='sample_name' class='sample_name'>
+					
+				</div>
+
+				<div id='test_comment' class='test_comment'>
+					Love it
+				</div>
+
+			</div>
+			<br>
+			<div id='sample_comment' class='sample_comment'>
+				<div id='sample_name' class='sample_name'>
+					Divyank Pandey
+				</div>
+
+				<div id='test_comment' class='test_comment'>
+					like it
+				</div>
+
+			</div>
+			<br>
+			<div id='sample_comment' class='sample_comment'>
+				<div id='sample_name' class='sample_name'>
+					Sudhanshu
+				</div>
+
+				<div id='test_comment' class='test_comment'>
+					One of the best programming Websites built by one of his own kind Vishal Pandey He is Truly Amazing If any sort of problem in Programming Then Vishal Pandey is yours man !!! Thanks a lot Again Shinchan Aka Vishal 
+				</div>
+
+			</div>
+			<br>
+			
+			<div id='sample_comment' class='sample_comment'>
+				<div id='sample_name' class='sample_name'>
+					Vishal
+				</div>
+
+				<div id='test_comment' class='test_comment'>
+					Wellcome Back
+				</div>
+
+			</div>
+			<br>
+			

@@ -1,0 +1,63 @@
+
+#one{
+	margin-left:150px;
+	margin-right:150px;
+	margin-top:0px;
+	background-color:none;
+	padding-top:150px;	
+	padding-left:100px;
+
+	}
+
+#header{
+	background-color:black;
+	color:white;
+	margin:-10px;
+	
+	text-align:center;
+	padding:20px;
+
+	position:fixed;
+	width:100%;
+}
+
+h2{
+	background-color:green;
+	margin-right:300px;
+	margin-bottom:-16px;
+	padding:20px;	
+	
+
+
+
+	}
+
+
+#one ul{
+	background-color:red;
+	margin-right:300px;	
+	text-transform:capitalize;
+	padding:30px;
+		
+	}
+
+#one ul li{
+	background-color:pink;
+	padding:5px;
+	margin:2px;
+	
+	}
+
+body{
+	
+	background-image:url("shinchan.jpg");
+	background-image:url("gif6.gif");
+	background-color:black;
+	background-repeat:no-repeat;
+	background-attachment:fixed;
+	background-position: right;
+
+	}
+
+
+

@@ -1,0 +1,27 @@
+	<li><a class="active" href="http://www.shinchannohara.com">Home</a></li>
+				
+		
+	
+
+<div class="dropdown">
+  <button class="dropbtn">Syllabus</button>
+  <div class="dropdown-content">
+	<a href="http://www.shinchannohara.com/physics.html">Physics Syllabus</a>
+
+	<a href="http://www.shinchannohara.com/math.html">Math Syllabus</a>
+
+	<a href="http://www.shinchannohara.com/computer.html">Computer Syllabus</a>
+	
+	<a href="http://www.shinchannohara.com/mechanics.html">Mechanics Syllabus</a>
+  </div>
+</div>
+
+	<li><a href="http://www.shinchannohara.com/java">Program</a></li>
+	<li><a href="http://www.shinchannohara.com/fun.html">Jama masjid</a></li>
+	<li><a href="http://www.pandeyvishal.com">VISHAL</a></li>
+        
+    <li><a href="http://www.shinchannohara.com/haker"> Hakerearth</a></li>
+    <li><a href="4thsem/">4th Semester</a></li>
+
+
+

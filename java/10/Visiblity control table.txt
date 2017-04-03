@@ -1,0 +1,12 @@
+/*
+visiblity controls
+
+
+		whin same class |	|  subclass of same pkg	|	|other class of same pkg|	| subclass of diff. pkg	|	|    other class of diff. pkg	|
+public:	  	|	Y	|	|	    Y		|	|	    Y		|	|          Y		|	|		Y		|
+PROTECTED :	|	Y	|	|	    Y		|	|	    Y		|	|          Y		|	|		N		|
+DEFAULT :	|	Y	|	|	    Y		|	|	    Y		|	|          N		|	|		N		|
+PRIVATE :	|	Y	|	|	    N		|	|	    N		|	|          N		|	|		N		|
+
+
+*/

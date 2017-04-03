@@ -1,0 +1,205 @@
+ <!DOCTYPE html>
+<html>
+<head>
+
+<meta name="description" content="programming problem from haker earth with solution" />
+
+<meta name="robots" content="index,follow" />
+
+<meta name="googlebot" content="index,follow	" />
+
+<meta http-equiv="Content-Type" content="best site for programming solutions ; charset= Unicode/UTF-8 " />
+
+<meta charset=" Unicode/UTF-8 ">
+<title>Monk and Power of Time</title>
+<link rel="stylesheet" type="text/css" href="sample.css">
+
+
+
+</head>
+
+<body>
+
+
+<div id="header">
+<h1>Monk and Power of Time</h1>
+</div>
+
+
+
+
+<div class='qlist'>
+
+<a href='index.php'>List Of Questions</a>
+
+</div>
+
+
+
+<div id="ques">
+The Monk is trying to explain to its users that even a single unit of time can be extremely important and to demonstrate this particular fact he gives them a challenging task.<br>
+<br>
+There are N processes to be completed by you, the chosen one, since you're Monk's favorite student. All the processes have a unique number assigned to them from 1 to N.<br>
+<br>
+Now, you are given two things:<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The calling order in which all the processes are called.<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The ideal order in which all the processes should have been executed.<br>
+<br>
+Now, let us demonstrate this by an example. Let's say that there are 3 processes, the calling order of the processes is: 3 - 2 - 1. The ideal order is: 1 - 3 - 2, i.e., process number 3 will only be executed after process number 1 has been completed; process number 2 will only be executed after process number 3 has been executed.<br>
+<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <b>Iteration #1:</b> Since the ideal order has process #1 to be executed firstly, the calling ordered is changed, i.e., the first element has to be pushed to the last place. Changing the position of the element takes 1 unit of time. The new calling order is: 2 - 1 - 3. Time taken in step #1: 1.<br>
+<br>
+
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <b>Iteration #2:</b> Since the ideal order has process #1 to be executed firstly, the calling ordered has to be changed again, i.e., the first element has to be pushed to the last place. The new calling order is: 1 - 3 - 2. Time taken in step #2: 1.<br>
+<br>
+
+
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <b>Iteration #3:</b> Since the first element of the calling order is same as the ideal order, that process will be executed. And it will be thus popped out. Time taken in step #3: 1.<br>
+<br>
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <b>Iteration #4:</b> Since the new first element of the calling order is same as the ideal order, that process will be executed. Time taken in step #4: 1.<br>
+<br>
+
+
+
+
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;    <b>Iteration #5:</b> Since the last element of the calling order is same as the ideal order, that process will be executed. Time taken in step #5: 1.<br>
+<br>
+Total time taken: 5 units.<br>
+<br>
+PS: Executing a process takes 1 unit of time. Changing the position takes 1 unit of time.<br>
+
+<br><br>
+
+
+<div id="input">
+<h2>Input format:</h2>
+The first line a number N, denoting the number of processes. The second line contains the calling order of the processes. The third line contains the ideal order of the processes.
+
+</div>
+
+<div id="output">
+<h2>Output format:</h2>
+Print the total time taken for the entire queue of processes to be executed.
+
+</div>
+
+<div id = "constraints">
+<h2>Constraints:</h2>
+1<=N<=100 
+</div>
+
+</div>
+
+<br>
+<br>
+
+<div id="sampleinp">
+<h3 align="center">sample input</h3>
+<kbd>
+3<br>
+3 2 1<br>
+1 3 2<br>
+</kbd>
+</div>
+<br>
+<div id="sampleopt">
+<h3 align="center">sample output</h3>
+<samp>5</samp>
+	
+</div>
+<br>
+
+
+
+<div id="solh">
+
+<h2>Solution</h2>
+</div>
+<div id="sol">
+<pre>
+<code>
+
+#include&lt;stdio.h&gt;
+
+int main()
+{
+	long int N , i , j ,T=0;
+	
+	scanf("%ld",&N);
+
+	long int C[N] , I[N];
+
+
+	for(i=0; i&lt;N ; i++)
+	scanf("%ld",&C[i]);
+
+	for(i=0; i&lt;N ; i++)
+	scanf("%ld",&I[i]);
+
+
+	while(N&gt;0)
+	{
+		if(C[0]==I[0])
+		{	
+			T++;
+			for(i=1; i&lt;N; i++)
+			{
+				C[i-1]=C[i];
+				I[i-1]=I[i];
+			}
+			N--;
+		}	
+
+		else
+		{
+			int temp;
+			temp = C[0];
+
+			for(i=1; i&lt;N; i++)
+			C[i-1]=C[i];
+				
+			C[N-1]=temp;
+			T++;
+		}
+
+	}
+	printf("%ld",T);			
+
+	return 0;
+}
+
+</code>
+</pre>
+</div>
+<br>
+<br>
+<div id="link">
+	Here is the link of the source code <a href="prg1.c">download</a>
+<br>
+	HakerEarth link <a href="https://www.hackerearth.com/problem/algorithm/monk-and-power-of-time/">click here</a>
+
+</div>
+
+
+
+
+
+</body>
+
+</html> 
+
+
+
+
+
+
